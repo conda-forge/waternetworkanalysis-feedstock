@@ -1,5 +1,5 @@
 {% set name = "WaterNetworkAnalysis" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/WaterNetworkAnalysis-{{ version }}.tar.gz
-  sha256: 943b92ca780c7554ba3010bdbee17e92283dd2dcb31194b72a01aa6bfc1c4cf5
+  sha256: e82ef3fd34f6938a679733a50463aa3ebe2e23c13c448a48b1126276ee4be666
 
 build:
   noarch: python
@@ -39,7 +39,7 @@ about:
   license_file: LICENSE
   doc_url: https://WaterNetworkAnalysis.readthedocs.io/
   dev_url: https://github.com/JecaTosovic/WaterNetworkAnalysis
-  summary:  Preparation of input and analysis of output for ConservedWaterSearch.  
+  summary: Preparation of input and analysis of output for ConservedWaterSearch.
 
 extra:
   recipe-maintainers:
