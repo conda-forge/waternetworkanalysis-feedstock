@@ -1,11 +1,11 @@
-About waternetworkanalysis
-==========================
+About waternetworkanalysis-feedstock
+====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/waternetworkanalysis-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/JecaTosovic/WaterNetworkAnalysis
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/waternetworkanalysis-feedstock/blob/main/LICENSE.txt)
 
 Summary: Preparation of input and analysis of output for ConservedWaterSearch.
 
