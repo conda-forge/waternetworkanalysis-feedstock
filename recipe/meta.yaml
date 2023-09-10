@@ -1,5 +1,5 @@
 {% set name = "WaterNetworkAnalysis" %}
-{% set version = "0.1.2" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/WaterNetworkAnalysis-{{ version }}.tar.gz
-  sha256: ac115117df181f965cf23ce65c30265373049c70888e95b9ea0b405670d23a71
+  sha256: 8b805ac2ff1d6d431a07fe7d47829ba45118a45c3dc10e7b56d458c0ecd09cf0
 
 build:
   noarch: python
@@ -16,13 +16,14 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.9
     - pip
   run:
-    - python >=3.7
-    - conservedwatersearch
-    - mdanalysis
-    - numpy <1.24
+    - python >=3.9
+    - conservedwatersearch >=0.1.0
+    - mdanalysis >=2.4.0
+    - numpy >=1.22
+    - scipy >=1.0.0
     - python-wget
 
 test:
