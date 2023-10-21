@@ -1,5 +1,5 @@
 {% set name = "WaterNetworkAnalysis" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/WaterNetworkAnalysis-{{ version }}.tar.gz
-  sha256: 8b805ac2ff1d6d431a07fe7d47829ba45118a45c3dc10e7b56d458c0ecd09cf0
+  sha256: 79ef00f91b27aa7ee2b07b83953336691bea6333a950b478af373f9da0b4fdde
 
 build:
   noarch: python
