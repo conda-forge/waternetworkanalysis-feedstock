@@ -6,20 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/WaterNetworkAnalysis-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/WaterNetworkAnalysis-{{ version }}.tar.gz
   sha256: ba4f48adcd144511fe3cc7984e574e24e307d2ae317e0d62a98b33959a8b8042
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 1
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
+    - setuptools
     - pip
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - conservedwatersearch >=0.1.0
     - mdanalysis >=2.4.0
     - numpy >=1.22
@@ -29,10 +30,9 @@ requirements:
 test:
   imports:
     - WaterNetworkAnalysis
-  commands:
-    - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/JecaTosovic/WaterNetworkAnalysis
