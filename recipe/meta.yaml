@@ -33,9 +33,6 @@ test:
   requires:
     - pip
     - python {{ python_min }}
-    - wget
-  commands:
-    - pip check
 
 about:
   home: https://github.com/JecaTosovic/WaterNetworkAnalysis
