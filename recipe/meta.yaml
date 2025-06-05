@@ -30,11 +30,12 @@ requirements:
 test:
   imports:
     - WaterNetworkAnalysis
-  commands:
-    - pip check
   requires:
     - pip
     - python {{ python_min }}
+    - wget
+  commands:
+    - pip check
 
 about:
   home: https://github.com/JecaTosovic/WaterNetworkAnalysis
